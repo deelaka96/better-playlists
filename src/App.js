@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class Aggregates extends Component {
@@ -24,7 +23,7 @@ class Filter extends Component {
 class Playlist extends Component {
   render() {
     return (
-      <div  style={{display:'inline-block',width:"25%"}}>
+      <div style={{ display: 'inline-block', width: "25%" }}>
         <img />
         <h3>Playlist Name</h3>
         <ul><li>Song 1</li><li>Song 2</li><li>Song 3</li></ul>
@@ -35,12 +34,9 @@ class Playlist extends Component {
 }
 class App extends Component {
   render() {
-    let name = 'Deelaka'
-    let green = '#ff1212'
-    let headerStyle = { color: green, 'font-size': '50px' }
     return (
       <div className="App">
-        <h1>Title</h1>
+        <h1 style={{ 'font-size': '54px'}}>Title</h1>
         <Aggregates />
         <Aggregates />
         <Filter />
